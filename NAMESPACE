@@ -1,0 +1,4 @@
+export(vegseg_config)
+export(vegseg_py_setup)
+export(vegseg_train)
+export(vegseg_predict)

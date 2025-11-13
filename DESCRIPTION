@@ -1,0 +1,15 @@
+Package: vegseg
+Type: Package
+Title: Height-Aware Point Cloud Segmentation (R wrapper for Python)
+Version: 0.0.1
+Authors@R: c(person("Venkata Siva Reddy Naga", "Name", role = c("aut","cre"), email = "vs.naga@ufl.edu"))
+Description: R interface to your Python HeightAwarePointNetTiny training and inference via reticulate.
+Depends: R (>= 4.1)
+Imports:
+    reticulate,
+    utils
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

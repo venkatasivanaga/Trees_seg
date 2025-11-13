@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+inst/python/__pycache__/
+inst/python/vegseg/__pycache__/
+inst/python/.venv/

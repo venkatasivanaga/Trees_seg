@@ -11,5 +11,7 @@ Imports:
 License: MIT
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/venkatasivanaga/Trees_seg
+BugReports: https://github.com/venkatasivanaga/Trees_seg/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3

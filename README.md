@@ -27,8 +27,7 @@ library(reticulate)
 use_condaenv("pointnext", required = TRUE)
 
 cfg <- vegseg_config(
-  las_path     = "data/unseen_part3_denoise.las",  # any LAS you want to segment
-  out_dir      = "data/ds_hag4",                   # not used in predict-only
+  las_path     = "data/trees2.las",  # any LAS you want to segment
   out_pred_dir = "data/output_predictions",
   model_path   = "data/model/best_model.pth"       # your pre-trained checkpoint
 )

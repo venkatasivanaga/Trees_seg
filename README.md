@@ -42,7 +42,7 @@ install.packages(
 
 library(vegseg)
 
-```r
+```
 
 ---
 
@@ -75,7 +75,7 @@ library(vegseg)
 You can create the Python environment directly from R using **reticulate** and
 install all Python dependencies from `requirements.txt`.
 
-
+```r
 # 1) Install and load reticulate (once)
 install.packages("reticulate")
 library(reticulate)
@@ -109,6 +109,7 @@ use_condaenv("pointnext", required = TRUE)
 # Sanity check: should show Python from the "pointnext" env
 py_config()
 
+```
 
 
 ## 3. Predict on a new LAS using a pre-trained model

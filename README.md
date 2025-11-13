@@ -1,3 +1,4 @@
+```r
 library(vegseg)
 library(reticulate)
 use_condaenv("pointnext", required = TRUE)
@@ -16,11 +17,11 @@ cfg <- vegseg_config(
 
 res <- vegseg_train(cfg, setup_env = FALSE)        # trains & saves best .pth
 vegseg_predict(cfg, mode = "overwrite", setup_env = FALSE)  # writes trees_predicted.las
+```
 
 
 
-
-
+```r
 library(vegseg)
 library(reticulate)
 use_condaenv("pointnext", required = TRUE)
@@ -35,3 +36,4 @@ cfg <- vegseg_config(
 vegseg_predict(cfg, mode = "overwrite", setup_env = FALSE)
 # or keep original classification and add 'pred_label':
 # vegseg_predict(cfg, mode = "extra", setup_env = FALSE)
+```

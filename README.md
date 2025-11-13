@@ -1,3 +1,8 @@
+
+# vegseg: An R Package for ---------------------------- from LiDAR Data
+
+**Authors:** Venkata Siva Reddy Naga, Carlos Alberto Silva, et al.,
+
 ```r
 library(vegseg)
 library(reticulate)

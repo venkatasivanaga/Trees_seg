@@ -153,3 +153,16 @@ cfg <- vegseg_config(
 res <- vegseg_train(cfg, setup_env = FALSE)        # trains & saves best .pth
 vegseg_predict(cfg, mode = "overwrite", setup_env = FALSE)  # writes trees_predicted.las
 ```
+
+## 5 Predicted results
+
+The figure below shows an example of the vegetation segmentation applied to a labeled LAS file.
+Each point is colored by its predicted class (e.g., ground/understory, stem, canopy foliage).
+
+![Example segmentation output](readme/trees.png)
+
+![Example segmentation output](readme/trees1.png)
+
+In this example, the model was trained on `trees.las` and then used to predict labels for the
+same scene. The output LAS (`trees_predicted.las`) stores predictions in the `classification`
+field, which can be visualized in tools like CloudCompare or QGIS using a class-based color ramp.

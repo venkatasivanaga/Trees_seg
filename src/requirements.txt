@@ -1,0 +1,20 @@
+# ===== Deep learning (CUDA 12.1 builds) =====
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+torchaudio==2.5.1+cu121
+
+# ===== Core numerics =====
+numpy~=2.2
+scipy~=1.15
+scikit-learn~=1.7
+tqdm>=4.66
+
+# ===== Point cloud IO =====
+laspy~=2.6
+lazrs~=0.7     # LAZ read/write for laspy
+
+# ===== Metrics / plots (for confusion matrices) =====
+matplotlib~=3.10
+seaborn~=0.13
+

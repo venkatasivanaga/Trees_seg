@@ -130,7 +130,7 @@ vegseg_predict(cfg, mode = "overwrite", setup_env = FALSE)
 # vegseg_predict(cfg, mode = "extra", setup_env = FALSE)
 ```
 
-# 4. Train a new model on your own labelled LAS data
+## 4. Train a new model on your own labelled LAS data
 
 
 ```r

@@ -161,7 +161,10 @@ Each point is colored by its predicted class (e.g., ground/understory, stem, can
 
 ![Example segmentation output](readme/trees.png)
 
-![Example segmentation output](readme/trees1.png)
+<p align="center">
+  <img src="readme/trees1.png" alt="Single tree segmentation output" width="45%">
+</p>
+
 
 In this example, the model was trained on `trees.las` and then used to predict labels for the
 same scene. The output LAS (`trees_predicted.las`) stores predictions in the `classification`

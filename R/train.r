@@ -7,6 +7,8 @@ vegseg_train <- function(cfg, setup_env = FALSE) {
   stopifnot(is.list(cfg))
   # import the Python trainer
   py_train <- reticulate::import("vegseg.train", delay_load = FALSE)
+  py_config <- reticulate::import("vegseg.config", delay_load = FALSE)
+
   
   # Make sure numeric fields are not strings
   cfg$batch_size    <- as.integer(cfg$batch_size)

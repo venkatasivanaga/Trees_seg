@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="readme/logo_gif.gif" alt="Single tree segmentation output" width="45%">
+  <img src="readme/logo_gif.gif" alt="Single tree segmentation output" width="100%">
 </p>
 
 

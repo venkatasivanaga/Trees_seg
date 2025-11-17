@@ -2,13 +2,18 @@
 % Please edit documentation in R/train.r
 \name{vegseg_train}
 \alias{vegseg_train}
-\title{Train model (builds NPZ if missing)}
+\title{Train the vegseg model (auto-preprocess if NPZ tiles are missing)}
 \usage{
-vegseg_train(cfg = vegseg_config(), setup_env = TRUE)
+vegseg_train(cfg, setup_env = FALSE)
 }
 \arguments{
 \item{cfg}{list from vegseg_config()}
+
+\item{setup_env}{logical; set TRUE to create/use the package venv}
+}
+\value{
+list(best_oa, best_epoch, ckpt_path)
 }
 \description{
-Train model (builds NPZ if missing)
+Train the vegseg model (auto-preprocess if NPZ tiles are missing)
 }

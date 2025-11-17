@@ -15,7 +15,7 @@ vegseg_config <- function(
     test_split    = 0.10,
     seed          = 42,
     batch_size    = 16,
-    epochs        = 20,
+    epochs        = 2,
     learning_rate = 1e-5,
     weight_decay  = 1e-4,
     cell_size     = 0.25,   # HAG grid size (m)

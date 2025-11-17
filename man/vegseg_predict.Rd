@@ -2,19 +2,20 @@
 % Please edit documentation in R/predict.r
 \name{vegseg_predict}
 \alias{vegseg_predict}
-\title{Predict on a LAS and write a predicted LAS}
+\title{Run prediction on cfg$las_path and write output LAS}
 \usage{
-vegseg_predict(
-  cfg = vegseg_config(),
-  new_in_las = NULL,
-  new_out_las = NULL,
-  mode = "overwrite",
-  setup_env = TRUE
-)
+vegseg_predict(cfg, mode = c("overwrite", "extra"), setup_env = FALSE)
 }
 \arguments{
-\item{mode}{"overwrite" (classification) or "extra" (adds pred_label)}
+\item{cfg}{list from vegseg_config()}
+
+\item{mode}{"overwrite" or "extra"}
+
+\item{setup_env}{logical; FALSE if you already have Python env}
+}
+\value{
+output LAS path (character)
 }
 \description{
-Predict on a LAS and write a predicted LAS
+Run prediction on cfg$las_path and write output LAS
 }

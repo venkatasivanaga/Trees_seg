@@ -19,11 +19,12 @@ vegseg_config(
   test_split = 0.1,
   seed = 42,
   batch_size = 16,
-  epochs = 20,
+  epochs = 2,
   learning_rate = 1e-05,
   weight_decay = 1e-04,
   cell_size = 0.25,
-  quantile = 0.05
+  quantile = 0.05,
+  delete_tiles_after_train = TRUE
 )
 }
 \description{

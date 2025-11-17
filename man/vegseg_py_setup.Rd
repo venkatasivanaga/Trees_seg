@@ -4,9 +4,7 @@
 \alias{vegseg_py_setup}
 \title{Create/use a venv and install Python deps listed in inst/python/requirements.txt}
 \usage{
-vegseg_py_setup(
-  envdir = file.path(system.file("python", package = "vegseg"), ".venv")
-)
+vegseg_py_setup(envdir = NULL)
 }
 \description{
 Create/use a venv and install Python deps listed in inst/python/requirements.txt

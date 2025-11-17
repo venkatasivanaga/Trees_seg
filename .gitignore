@@ -4,5 +4,4 @@
 .Ruserdata
 .DS_Store
 inst/extdata/python/__pycache__/
-extdata/python/FuelDeep3D/__pycache__/
 inst/extdata/python/.venv/

@@ -59,7 +59,6 @@ FuelDeep3D::predict(cfg, mode = "overwrite", setup_env = FALSE)
 require(lidR)
 
 p0<-readLAS(system.file("extdata","las", "trees.las", package = "FuelDeep3D"))
-
 writeLAS(p0, "C:\\Users\\vs.naga\\Documents\\Github\\FuelDeep3D\\inst\\extdata\\las\\trees.laz" )
 
 p<-readLAS("C:/Users/vs.naga/Documents/Github/FuelDeep3D/trees_predicted.las")
@@ -69,16 +68,43 @@ head(p@data)
 summary(p@data$Classification)
 summary(p0@data$label)
 
-plot(p0, color ="label" )
-plot(p, color ="Classification" )
+p@data$Classification[p@data$Classification==0]<-3
 
-??lidR::plot
+plot(p0, color ="label" )
+
+library(rgl)
+
+# Option A: use class codes directly as palette indices (1,2,3,...)
+rgl::points3d(p@data[,c(1:3)], col = p@data$Classification, size = 2)
+
 
 # or keep original classification and add 'pred_label':
 # predict(cfg, mode = "extra", setup_env = FALSE)
 
+cols <- c(
+  "1" = "blue",  # class 1
+  "2" = "sienna",       # class 2
+  "3" = "gray40"        # class 3
+)
+
+rgl::points3d(
+  p@data[,c(1:3)],
+  col  = cols[as.character(p@data$Classification)],
+  size = 2
+)
 
 
+p3<-function(las,cols,...){
+  
+  rgl::points3d(
+    las@data[,c(1:3)],
+    col  = cols[as.character(las@data$Classification)],
+    ...
+  )
+
+}
+
+p3(p,cols, size=2)
 ## 4. Train a new model on your own labelled LAS data
 
 library(FuelDeep3D)
